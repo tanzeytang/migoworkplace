@@ -135,5 +135,8 @@
       }
     }
   },
-  "defaultProject": "workplace"
+  "defaultProject": "workplace",
+  "cli": {
+    "analytics": "a5b25733-78ec-485d-8d86-f13b9f7dd451"
+  }
 }

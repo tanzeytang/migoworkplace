@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+//这是我们的全局样式表
+//首先在debugger里面可以看到应用的第一层是HTML，然后是header，body，body里面是div，然后是app-root根组件，
+//然后里面才是我们放置的其他组件，因为默认body等元素是有一些margin等等的，但是我们就希望根组件可以撑满
+//HTML页面，所以必须从外到里把它的宽度高度和margin都设置一下
+//flex就是一个容器，当你把选定的容器设置为flex的时候，它里面的直接元素会安装flex的相应设定生效；
+//引入angular的material theme  可以使用materail的主题；
+
+//@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import './theme.scss';
+html,body,app-root, mat-sidenav-container, .site {
+    width: 100%;
+    height: 100%;
+    margin:0;
+}
+
+.site{
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1;
+}
+.fill-remaining-space {
+    flex: 1 1 0;
+}
+.fill-remaining-space {
+    flex: 1 1 auto;
+}
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}

@@ -1,0 +1,11 @@
+<mat-toolbar color="primary">
+    <button mat-icon-button (click)="openSidebar()">
+        <mat-icon>menu</mat-icon>
+    </button>
+<span class="fill-remaining-space"></span>
+
+<span>Welcom to My Workplace</span>
+
+<span class="fill-remaining-space"></span>
+<mat-slide-toggle (change)="onChange($event.checked)">Dark Model</mat-slide-toggle>
+</mat-toolbar>
